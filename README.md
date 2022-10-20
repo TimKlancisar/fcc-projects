@@ -1,61 +1,79 @@
-# Frontend Mentor - Expenses chart component solution
+# FreeCodeCamp Projects
 
 This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [About FCC](#free-code-camp)
-  - [Curriculum](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-    - [www](#something)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+- [About FCC](#about-freecodecamp)
+- [Project list](#my-process)
+  - [Responsive Web Design](#responsive-web-design)
+    - [Survey Form](#survey-form)
+    - [Tribute Page](#tribute-page)
+    - [Techical Documentation Page](#techical-documentation-page)
+    - [Product Landing Page](#product-landing-page)
+    - [Personal Portfolio Webpage](#personal-porfolio-webpage)
+  - [JavaScript Algorithms and Data Structures](#javascript-algorithms-and-data-structures)
+    - [Palindrom Checker](#palindrom-checker)
+    - [Roman Numeral Converter](#roman-numeral-converter)
+    - [Caesars Cipher](#caesars-cipher)
+    - [Telephone Number Validator](#telephone-number-validator)
+    - [Cash Register](#cash-register)
+  - [Front End Development Libraries](#front-end-development-libraries)
+    - [Random Quote Machine](#random-quote-machine)
+    - [Markdown Previewer](#markdown-previewer)
+    - [Drum Machine](#drum-machine)
+    - [Javascript Calculator](#javascript-calculator)
+    - [25 + 5 Clock](#25-5-clock)
+  - [Future Projects](#future-projects)
 - [Author](#author)
 
-## Overview
+## About FreeCodeCamp
 
-### Free Code Camp
+[**freeCodeCamp**](https://www.freecodecamp.org) (also referred to as Free Code Camp) is a non-profit organization that consists of an interactive learning web platform, an online community forum, chat rooms, online publications and local organizations that intend to make learning web development accessible to anyone. Beginning with tutorials that introduce students to HTML, CSS and JavaScript, students progress to project assignments that they complete either alone or in pairs. Upon completion of all project tasks, students are partnered with other nonprofits to build web applications, giving the students practical development experience.[more...](https://en.wikipedia.org/wiki/FreeCodeCamp)
 
-Users should be able to:
+## Project List
 
-- View the bar chart and hover over the individual bars to see the correct amounts for each day ✔️
-- See the current day’s bar highlighted in a different colour to the other bars ✔️
-- View the optimal layout for the content depending on their device’s screen size ✔️
-- See hover states for all interactive elements on the page ✔️
-- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart ✔️
+### Responsive Web Design
 
-### Screenshot
+#### Survey Form
 
-![](./images/screenshot.png)
+#### Tribute Page
 
-### Links
+#### Technical Documentation Page
 
-- Solution URL: [Expenses chart repo](https://github.com/TimKlancisar/Expenses-chart)
-- Live Site URL: [Link](https://rainbow-bublanina-c05408.netlify.app/)
+#### Product Landing Page
 
-## My process
+#### Personal Portfolio Page
 
-### Built with
+### JavaScript Algorithms and Data Structures
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- JavaScript
-- [BEM naming convention](https://en.bem.info/methodology/)
+#### Palindrom Checker
 
-### What I learned
+#### Roman Numeral Converter
 
-I refreshed my knowledge of BEM methodolgy, JSON file fetching and some of the best practices in web design.
+#### Caesars Cipher
 
-### Continued development
+#### Telephone Number Validator
+
+#### Cash Register
+
+### Front End Development Libraries
+
+#### Random Quote Machine
+
+#### Markdown Previewer
+
+#### Drum Machine
+
+#### Javascript Calculator
+
+#### 25 + 5 Clock
+
+### Future Projects
 
 In the future I'll have to focus on trimming down my stylesheets as well as improving responsivnes and scalability of my projects.
 
 ## Author
 
 - Website - Tim Klančišar (WiP)
-- Frontend Mentor - [My FM Profile](https://www.frontendmentor.io/profile/TimKlancisar)
 - LinkedIn - [Tim Klančišar](https://www.linkedin.com/in/tim-klan%C4%8Di%C5%A1ar-91a359225/)
