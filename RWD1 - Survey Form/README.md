@@ -25,5 +25,5 @@ Build an app that is functionally similar to [https://survey-form.freecodecamp.r
     16. Inside the form element, you are presented with a button with id of submit to submit all the inputs. ✔
 
 ## Completed Project
-- [**live link**](https://musical-kleicha-443ba4.netlify.app/)
+- [**LIVE LINK**](https://musical-kleicha-443ba4.netlify.app/)
 - [Old version of the project](https://codepen.io/bradypusMagnus/pen/YzxLGoa) *Open at your own discretion*
