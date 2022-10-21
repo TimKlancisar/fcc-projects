@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FCC project #1 - EGC 2024 Registration Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>    
+</head>
+<body>
+    <div id="title">
+    <h1>Registration Form</h1>
+    <img src="./assets/egc2024-logo.jpg" alt="logo" />
+    </div>
+    <form>
+    <div id="description">
+        The European Go Congress 2024 will take place in Toulouse in Southern France from July 26th to August 10th. This is my remake of their registration form! 
+    </div>
+    <div class="survey-form">
+        <div class="form-column">
+            <fieldset class="fieldset-style">
+                <legend>Personal info</legend>
+                <div class="two-inputs">
+                <div class="input-unit">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="input-unit">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Your last name">
+                </div>                    
+                </div>
+                <div class="two-inputs">
+                <div class="input-unit">
+                    <label>Country</label>
+                    <input type="text" placeholder="Country of origin">
+                </div>
+                <div class="input-check">
+                    <p>Are you a go player?</p>
+                    <div>
+                        <label>Yes</label>
+                        <input type="radio" name="isplayer" onchange="disableDetails(false)">
+                        <label>No</label>
+                        <input type="radio" name="isplayer" onchange="disableDetails(true)">
+                    </div>
+                </div>
+                </div>                
+                <div class="two-inputs">
+                <div class="input-unit">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-unit">
+                    <label>Phone</label>
+                    <input type="number" placeholder="Telephone number" style="appearance: textfield;">
+                </div>                    
+                </div>
+                <div class="two-inputs">
+                    <div class="input-unit">
+                    <label>Birthdate</label>
+                    <input type="date">
+                    </div>
+                    <div class="input-unit">
+                        <label>Gender</label>
+                        <select name="gender">
+                            <option value="">Gender</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="O">Prefer not to say</option>
+                        </select>
+                    </div>                    
+                </div>
+                <hr>
+                <div class="two-inputs">
+                    <div class="input-unit">
+                        <label>Club</label>
+                        <input type="text" placeholder="Your club" class="player-details">
+                    </div>
+                    <div class="input-unit">
+                        <label>Rank</label>
+                        <select name="level" placeholder="Rank" class="player-details">
+                            <option value=""></option>
+                            <option value="20k">20 kyu or less</option>
+                            <option value="19k">19 kyu</option>
+                            <option value="18k">18 kyu</option>
+                            <option value="17k">17 kyu</option>
+                            <option value="16k">16 kyu</option>
+                            <option value="15k">15 kyu</option>
+                            <option value="14k">14 kyu</option>
+                            <option value="13k">13 kyu</option>
+                            <option value="12k">12 kyu</option>
+                            <option value="11k">11 kyu</option>
+                            <option value="10k">10 kyu</option>
+                            <option value="9k">9 kyu</option>
+                            <option value="8k">8 kyu</option>
+                            <option value="7k">7 kyu</option>
+                            <option value="6k">6 kyu</option>
+                            <option value="5k">5 kyu</option>
+                            <option value="4k">4 kyu</option>
+                            <option value="3k">3 kyu</option>
+                            <option value="2k">2 kyu</option>
+                            <option value="1k">1 kyu</option>
+                            <option value="1d">1 dan</option>
+                            <option value="2d">2 dan</option>
+                            <option value="3d">3 dan</option>
+                            <option value="4d">4 dan</option>
+                            <option value="5d">5 dan</option>
+                            <option value="6d">6 dan</option>
+                            <option value="7d">7 dan</option>
+                            <option value="8d">8 dan</option>
+                            <option value="1p">1 dan pro</option>
+                            <option value="2p">2 dan pro</option>
+                            <option value="3p">3 dan pro</option>
+                            <option value="4p">4 dan pro</option>
+                            <option value="5p">5 dan pro</option>
+                            <option value="6p">6 dan pro</option>
+                            <option value="7p">7 dan pro</option>
+                            <option value="8p">8 dan pro</option>
+                        </select>
+                    </div>  
+                    </div>
+                    <div class="two-inputs">
+                    <div class="input-unit">
+                        <label>EGD pin</label>
+                        <input type="number" class="player-details">
+                        <a href="https://www.europeangodatabase.eu/EGD/Find_Player.php" style="text-align: right;">find pin link</a>
+                    </div>
+                    <div class="input-check">
+                        <p>Main tournament participation?</p>
+                        <div>
+                            <label>Yes</label>
+                            <input type="radio" name="main" class="player-details">
+                            <label>No</label>
+                            <input type="radio" name="main" class="player-details">
+                        </div>
+                    </div>
+                    </div>
+            </fieldset>
+        </div>
+        <div class="form-column">
+         <div class="selection">
+            <div class="progress-left" id="progressLeft"></div>
+            <div class="progress-right" id="progressRight"></div>
+            <div class="circle">
+                1st Week
+            </div>
+            <div class="circle active-circle">
+                Week-End
+            </div>
+            <div class="circle">
+                2nd Week
+            </div>
+         </div>
+         <div class="duration-options">
+            <div>
+                <input type="radio" name="duration" class="pick-option" onchange="update(1)" checked>
+                <label>
+                    Week-End                
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="duration" class="pick-option" onchange="update(0)">
+                <label>
+                    1st Week + Week-End                
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="duration" class="pick-option" onchange="update(2)">
+                <label>
+                    2nd Week + Week-End               
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="duration" class="pick-option" onchange="update()">
+                <label>
+                    Full Congress                
+                </label>
+            </div>
+         </div>
+         <div class="price-info">
+            <p>Duration: <span id="date">6.8.2023 - 7.8.2023</span></p>
+            <p>Price: <span id="price">€30</span></p>
+         </div>
+        </div>
+        <div class="form-column">
+        <fieldset class="fieldset-style">
+            <legend>Login info</legend>
+            <div class="two-inputs" style="flex-direction: column;">
+                <div class="input-unit">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-unit">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password">
+                </div>                    
+            </div>
+            
+        </fieldset>
+        <textarea name="comments" placeholder="Comments/remarks"></textarea>
+        </div>
+    </div>
+    <div class="form-end agreement">
+        <label>
+            <input type="checkbox">
+            I accept the 
+            <a href="#">general terms and conditions</a>
+             of the website
+        </label>
+        <div>
+            <label>
+                <input type="checkbox">
+                I grant the use of my image on videos and photos taken during the event to the FFG, for the sole purpose of promotion and communication around the EGC.
+            </label>
+        </div>
+    </div>
+    <button class="reg-btn form-end" id="submit">Register</button>
+    </form>
+    <script src='main.js'></script>
+</body>
+</html>
