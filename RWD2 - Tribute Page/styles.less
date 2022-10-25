@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+/* Variables */
+@bgcolor: #FCF5E5;
+@primary-color: #16264c;
+@secondary-color: #807252;
+
+/* Mixins */
+
+.content_box {
+  height: max-content;
+  display: flex;
+  padding: 0 3em 3em;
+}
+
+/* Basic Setup */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  color: @primary-color;
+  font-family: 'Nanum Brush Script', 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+
+/* Main CSS */
+
+#main {
+  display: flex;
+  flex-direction: column;
+  background-color: @bgcolor;
+  h1, h2 {
+    font-size: 3em;
+    font-style: italic;
+    line-height: .8em;
+  }
+
+  a {
+    color: @secondary-color;
+    text-decoration: none;
+  }
+
+  figure {
+    background-color: @primary-color;
+    padding: .4em;
+    border-radius: 5px;
+    height: fit-content;
+    width: fit-content;
+    
+    figcaption {
+      color: @bgcolor;
+    }
+
+    img {
+      border-radius: inherit;
+      width: 25vw;
+      min-width: 400px;
+      height: auto;
+    }
+
+  }
+
+  #header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    background-image: url('./assets/japanese_pattern.jpg');
+
+    #title {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      text-align: right;
+      z-index: 1;
+
+      p {
+        font-size: 1.2em;
+      }
+
+    }
+
+    #img-div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+
+      #image {
+        border-radius: 50%;
+        border: 15px solid @bgcolor;
+      }
+
+    }
+
+    &::after {
+      content: "";
+      top: 50%;
+      transform: translate(0, -50%);
+      position: absolute;
+      background-color: @bgcolor;
+      width: 100%;
+      height: 250px;
+    }
+
+  }
+
+  #about {
+    
+    h2  {
+      text-align: right;
+      background-image: url('./assets/stroke-right.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 6em;
+      padding:.5em 1em;
+      margin-right: 1em;
+      color: @bgcolor;
+    }
+
+    .about__content {
+      .content_box();
+      gap: 2em;
+      flex: 1;
+    }
+
+    .banner {
+      height: 80px;
+      background-image: url('./assets/japanese_pattern.jpg');
+    }
+
+  }
+
+  #timeline {
+    h2  {
+      text-align: left;
+      background-image: url('./assets/stroke-left.svg');
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 6em;
+      padding:.5em 1em;
+      margin-left: 1em;
+      color: @bgcolor;
+    }
+
+    .timeline__content {
+      .content_box();
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      
+      ul {
+        list-style: none;
+      }
+
+    }
+
+  }
+
+  #footer {
+    background-image: url("./assets/japanese_pattern.jpg");
+    position: relative;
+    height: 10vh;
+    & > div {
+      background-color: @primary-color;
+      color: @bgcolor;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  #main {
+    h1, h2 {
+      text-align: center !important;
+      margin: 0 !important;
+      background-position: center !important;
+    }
+    #header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      #title {
+        text-align: center;
+        flex: .5;
+        justify-content: flex-end;
+        width: 300px;
+      }
+      #img-div {
+        align-items: flex-start;
+      }
+      &::after {
+        width: 350px;
+        height: 100%;
+      }
+    }
+    .about__content, .timeline__content {
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 2em;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #main {
+    #header {
+      #img-div {
+        #img-portrait {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
