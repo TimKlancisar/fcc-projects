@@ -14,13 +14,12 @@ Build an app that is functionally similar to [https://tribute-page.freecodecamp.
     5.Within the #img-div element, you should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in #img-div. ✔
     6.You should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
     7.You should see an a element with a corresponding id="tribute-link", which links to an outside site, that contains additional information about the subject of the tribute page. ✔
-    8.Your #image should use max-width and height properties to resize responsively, relative to the width of its parent element, without exceeding its original size.
-    9.Your img element should be centered within its parent element.
+    8.Your #image should use max-width and height properties to resize responsively, relative to the width of its parent element, without exceeding its original size. ✔
+    9.Your img element should be centered within its parent element. ✔
 
 
 ## Completed Project
-- [**LIVE LINK**](#)
+- [**LIVE LINK**](https://honinbo-shusaku-tribute.netlify.app/)
 - [Old version of the project](https://codepen.io/bradypusMagnus/pen/poraoRQ)
 
-✔
-
+tags: _Flex Box_, _Responsive_, _Less_
