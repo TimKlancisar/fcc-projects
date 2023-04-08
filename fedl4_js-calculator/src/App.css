@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#calculator{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: fit-content;
+  padding:10px 13px;
+  margin: 15vh auto;
+  background:#232323;
+  border:#000 1px solid;
+  border-radius:7px;
+  box-shadow:rgba(0,0,0,0.4) 0px 2px 5px, inset rgba(255,255,255,0.9) 0px 1px 1px -1px;
+  background-image:-moz-linear-gradient(top, #333333, #1f1f1f);
+  background-image:-webkit-linear-gradient(top, #333333, #1f1f1f);
+  background-image:linear-gradient(top, #333333, #1f1f1f);
+  overflow: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+#display{
+  width:424px;
+  height:93px;
+  margin: 12px auto 30px;
+  padding:15px 20px;
+  color:#c0c0c0;
+  text-align: right;
+  font-size: 3em;
+  letter-spacing: 3px;
+  overflow:hidden;
+  border:#000 1px solid;
+  border-radius:7px;
+  box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
+  background-image: -moz-linear-gradient(top, #3e3e3e 0%, #303030 100%);
+background-image: -webkit-linear-gradient(top, #3e3e3e 0%, #303030 100%);
+background-image: linear-gradient(top, #3e3e3e 0%, #303030 100%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#title{
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+#title svg {
+  height: 1.2em;
+  width: auto;
+}
+#keyboard{
+  display: grid;
+  grid-template-columns: repeat(4, 95px);
+  grid-template-rows: repeat(5, 68px);
+  grid-gap: 10px 13px;
+  overflow: hidden;
+  list-style: none;
+}
+#keyboard button{
+  height: 100%;
+  width: 100%;
+  color:#c0c0c0;
+  font-family: "Myriad Pro", Arial, sans-serif;
+  font-size:1.6em;
+  font-weight: 500;
+  background-color:#2f2f2f;
+  border: #000 1px solid;
+  border-radius:5px;
+  text-align: center;
+  box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+  background-image:-moz-linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
+  background-image:-webkit-linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
+background-image:linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
+  cursor: pointer;
+  user-select: none;
+}
+#keyboard button:active{
+  box-shadow: inset rgba(0,0,0,0.5) 0px 2px 8px;
+  background-image:-moz-linear-gradient(top, #2f2f2f 0%, #363636 100%);
+background-image:-webkit-linear-gradient(top, #2f2f2f 0%, #363636 100%);
+background-image:linear-gradient(top, #2f2f2f 0%, #363636 100%);
+}
+.btn-tall {
+  grid-row: span 2;
+}
+.btn-wide {
+  grid-column: span 2;
 }

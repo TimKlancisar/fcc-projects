@@ -1,22 +1,19 @@
 import './App.css';
+import { useRef, useEffect } from 'react';
+import { FaFreeCodeCamp } from 'react-icons/fa';
+
+import { keys } from './engine/data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="calculator">
+        <span id="title"><FaFreeCodeCamp />Calculator</span>
+        <div id='display'>0</div>
+        <ul id="keyboard">
+          {keys.map((key) => {
+            return <li id={key.id} className={key.id === 'equals' ? 'btn-tall' : key.id === 'zero' ? 'btn-wide' : null}><button>{key.value}</button></li>
+          })}
+        </ul>
     </div>
   );
 }
